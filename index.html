@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>💰 Expense Tracker</h1>
+      <div class="inputs">
+        <input type="text" placeholder="Description" id="description">
+        <input type="number" placeholder="Amount" id="amount">
+        <div class="choose">
+            <select class="the2" id="category">
+                <option value="food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="travel">Travel</option>
+                <option value="Entertaiment">Entertaiment</option>
+                <option value="other">Other</option>
+            </select>
+            <select class="the2" id="expense-type">
+                <option value="" disabled selected>Expense Type</option>
+                <option value="budgeted">Budgeted</option>
+                <option value="unexpected">Unexpected</option>
+            </select>
+
+        </div>
+        <button id="add">Add</button>
+    </div>
+    <div class="after-added">
+        <select  class="sort">
+            <option value="nothing" disabled selected>Sort</option>
+            <option value="byamount">Sort by Amount</option>
+            <option value="bydate">Sort by Date</option>
+            <option value="byname">Sort by Name</option>
+        </select>
+        <select class="sort-category">
+                <option value="all Categories">All Categories</option>
+                <option value="Food">Food</option>
+                <option value="Transport">Transport</option>
+                <option value="Shopping">Shopping</option>
+                <option value="Bills">Bills</option>
+                <option value="Travel">Travel</option>
+                <option value="Entertaiment">Entertaiment</option>
+                <option value="Other">Other</option>
+            </select>
+    </div>
+    <h1 class="total">Total: <span id="total">0</span> ETB</h1>
+    <div id="expenses">
+
+    </div>
+    <button class="deleteall">Delete all</button>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
